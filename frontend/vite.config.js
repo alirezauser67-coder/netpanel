@@ -13,13 +13,13 @@ function resolveDBPath() {
     const abs = path.isAbsolute(envFolder)
       ? envFolder
       : path.resolve(import.meta.dirname, '..', envFolder);
-    return path.join(abs, 'x-ui.db');
+    return path.join(abs, 'netpanel.db');
   }
-  const repoSubDB = path.resolve(import.meta.dirname, '..', 'x-ui', 'x-ui.db');
+  const repoSubDB = path.resolve(import.meta.dirname, '..', 'netpanel', 'netpanel.db');
   if (fs.existsSync(repoSubDB)) return repoSubDB;
-  const repoDB = path.resolve(import.meta.dirname, '..', 'x-ui.db');
+  const repoDB = path.resolve(import.meta.dirname, '..', 'netpanel.db');
   if (fs.existsSync(repoDB)) return repoDB;
-  return '/etc/x-ui/x-ui.db';
+  return '/etc/netpanel/netpanel.db';
 }
 
 const PANEL_API_PREFIXES = ['panel/api/', 'panel/csrf-token'];

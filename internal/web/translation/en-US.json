@@ -1296,7 +1296,7 @@
       "subAnnounce": "Announce",
       "subAnnounceDesc": "The announcement text displayed in the VPN client. Supports client identity tokens: {{EMAIL}}, {{ID}}, {{SHORT_ID}}, {{SUB_ID}}, {{TELEGRAM_ID}}.",
       "subThemeDir": "Sub Theme Directory",
-      "subThemeDirDesc": "Absolute path to a folder containing a custom index.html/sub.html subscription page template (e.g. /etc/3x-ui/sub_templates/my-theme/). Leave empty to use the default page.",
+      "subThemeDirDesc": "Absolute path to a folder containing a custom index.html/sub.html subscription page template (e.g. /etc/netpanel/sub_templates/my-theme/). Leave empty to use the default page.",
       "subThemeDirDocs": "Template guide ↗",
       "subEnableRouting": "Enable routing",
       "subEnableRoutingDesc": "Global setting to enable routing in the VPN client. (Only for Happ)",

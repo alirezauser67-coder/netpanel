@@ -36,7 +36,7 @@ export default function TwoFactorModal({
   const totp = useMemo(() => {
     if (!open || !token) return null;
     return new OTPAuth.TOTP({
-      issuer: '3x-ui',
+      issuer: 'netpanel',
       label: 'Administrator',
       algorithm: 'SHA1',
       digits: 6,

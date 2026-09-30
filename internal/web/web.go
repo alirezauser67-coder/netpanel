@@ -208,7 +208,7 @@ func (s *Server) initRouter() (*gin.Engine, error) {
 		sessionOptions.MaxAge = sessionMaxAge * 60 // minutes -> seconds
 	}
 	store.Options(sessionOptions)
-	engine.Use(sessions.Sessions("3x-ui", store))
+	engine.Use(sessions.Sessions("netpanel", store))
 	engine.Use(func(c *gin.Context) {
 		c.Set("base_path", basePath)
 	})

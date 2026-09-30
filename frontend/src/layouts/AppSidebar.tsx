@@ -42,9 +42,7 @@ import { pauseAnimationsUntilLeave, useTheme } from '@/hooks/useTheme';
 import { useAllSettings } from '@/api/queries/useAllSettings';
 import './AppSidebar.css';
 
-const DONATE_URL = 'https://donate.sanaei.dev/';
-const DOCS_URL = 'https://docs.sanaei.dev/';
-const REPO_URL = 'https://github.com/MHSanaei/3x-ui';
+const REPO_URL = 'https://github.com/x4gpanell/3X-ui.3.7.0';
 const LOGOUT_KEY = '__logout__';
 const RAIL_WIDTH = 72;
 const SIDER_WIDTH = 220;
@@ -84,7 +82,7 @@ const iconByName: Record<IconName, ComponentType> = {
 function DonateButton({ ariaLabel }: { ariaLabel: string }) {
   return (
     <a
-      href={DONATE_URL}
+      href={REPO_URL}
       target="_blank"
       rel="noopener noreferrer"
       className="sidebar-donate"
@@ -99,7 +97,7 @@ function DonateButton({ ariaLabel }: { ariaLabel: string }) {
 function DocsButton({ ariaLabel }: { ariaLabel: string }) {
   return (
     <a
-      href={DOCS_URL}
+      href={REPO_URL}
       target="_blank"
       rel="noopener noreferrer"
       className="sidebar-docs"
@@ -366,7 +364,7 @@ export default function AppSidebar() {
       >
         <div className="sider-brand">
           <div className="brand-block">
-            <span className="brand-text">{railCollapsed ? '3X' : '3X-UI'}</span>
+            <span className="brand-text">{railCollapsed ? 'NP' : 'NetPanel'}</span>
           </div>
           {!railCollapsed && (
             <div className="brand-actions">
@@ -430,7 +428,7 @@ export default function AppSidebar() {
       >
         <div className="drawer-header">
           <div className="brand-block">
-            <span className="drawer-brand">3X-UI</span>
+            <span className="drawer-brand">NetPanel</span>
           </div>
           <div className="drawer-header-actions">
             <DocsButton ariaLabel={t('menu.docs') || 'Documentation'} />
