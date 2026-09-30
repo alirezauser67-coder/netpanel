@@ -1,2 +1,1 @@
-railway don't ban this 
-
+ی پروژ ست برای اپدیت جدید railway فقط اسم پنل سنای رو ایکسui به netpanel تغیر داده
